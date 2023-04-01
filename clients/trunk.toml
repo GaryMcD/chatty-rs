@@ -1,0 +1,19 @@
+[build]
+# The index HTML file to drive the bundling process.
+target = "index.html"
+# Build in release mode.
+release = false
+# The output dir for all final assets.
+dist = "dist"
+
+[[hooks]]
+# This hook example shows all the current available fields. It will execute the equivalent of
+# typing "echo Hello Trunk!" right at the start of the build process (even before the HTML file
+# is read). By default, the command is spawned directly and no shell is used.
+stage = "pre_build"
+command = "./tailwind/tailwindcss"
+command_arguments = [
+    "-c", "./tailwind/tailwind.config.js",
+    "-i", "./tailwind/input.css",
+    "-o", "./index.css"
+    ]
