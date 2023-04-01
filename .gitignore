@@ -1,3 +1,4 @@
 /target
 /clients/dist
+/clients/index.css
 Cargo.lock
