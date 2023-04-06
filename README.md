@@ -2,7 +2,7 @@
 
 This is a simple 1:1 chat example built with a Rust stack. The frontend is Yew, middleware is trunk, backend is Actix. Tailwind CSS is used for styling on the frontend. Trunk will automatically have Tailwind check for any new classes to add into the `.css` file.
 
-You can access a demo version here: [Chatty-rs Demo](chatty.19ninety2.com).
+You can access a demo version here: [Chatty-rs Demo](http://chatty.19ninety2.com).
 
 To run locally on your machine.
 
