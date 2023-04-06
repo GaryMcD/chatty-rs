@@ -20,8 +20,9 @@ fn App() -> Html {
     }
 }
 
-#[function_component]
 // https://codepen.io/robstinson/pen/oNLaLMN
+#[cfg(debug_assertions)]
+#[function_component]
 fn PageContainer() -> Html {
     html! {
         <div class = {PAGE_CONTAINER_CLASS.to_owned()}>
@@ -29,6 +30,34 @@ fn PageContainer() -> Html {
                 user = {USER_ONE.to_owned()} />
             <ChatBox 
                 user = {USER_TWO.to_owned()} />
+        </div>
+    }
+}
+
+#[cfg(not(debug_assertions))]
+#[function_component]
+fn PageContainer() -> Html {
+    let messages_handle = use_state(Vec::new);
+
+    let on_message = {
+        let messages_handle = messages_handle.clone();
+        Callback::from(move |message| {
+            let mut old = (*messages_handle).clone();
+            old.push(message);
+            messages_handle.set(old);
+        })
+    };
+    
+    html! {
+        <div class = {PAGE_CONTAINER_CLASS.to_owned()}>
+            <ChatBox 
+                user = {USER_ONE.to_owned()}
+                chat_history = {(*messages_handle).clone()}
+                on_message = {on_message.clone()} />
+            <ChatBox 
+                user = {USER_TWO.to_owned()}
+                chat_history = {(*messages_handle).clone()}
+                on_message = {on_message} />
         </div>
     }
 }
