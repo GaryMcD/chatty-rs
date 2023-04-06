@@ -7,7 +7,7 @@ use yew::prelude::*;
 
 const USER_ONE: &str = "Steve";
 const USER_TWO: &str = "Frank";
-const PAGE_CONTAINER_CLASS: &str = "flex flex-col sm:flex-row gap-10 justify-center w-screen min-h-screen bg-gray-100 text-gray-800 p-10";
+const PAGE_CONTAINER_CLASS: &str = "flex flex-col lg:flex-row gap-10 justify-center w-screen min-h-screen bg-gray-100 text-gray-800 p-10";
 
 fn main() {
     yew::Renderer::<App>::new().render();

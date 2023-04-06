@@ -11,7 +11,7 @@ use gloo_net::http::Request;
 #[cfg(debug_assertions)]
 use wasm_bindgen_futures::spawn_local;
 
-const CHATBOX_CONTAINER_CLASS: &str = "flex flex-col flex-grow w-full sm:max-w-xl bg-white shadow-xl rounded-lg overflow-hidden";
+const CHATBOX_CONTAINER_CLASS: &str = "flex flex-col flex-grow w-full lg:max-w-xl bg-white shadow-xl rounded-lg overflow-hidden";
 
 #[derive(Properties, PartialEq)]
 pub(crate) struct ChatBoxProperties {
