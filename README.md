@@ -1,4 +1,8 @@
-<h1 align="center">Chatty-rs 🎉🎈</h1>
+<p align="center">
+  <img width="250" height="250" src="https://user-images.githubusercontent.com/16275325/231910717-efc96e6f-1acd-4277-9310-e50cfccd8d04.png">
+</p>
+<h1 align="center">Chatty RS</h1>
+
 Introducing Chatty-rs, a delightful and straightforward 1:1 chat example built with an all-Rust stack! 🦀 The frontend is powered by Yew, the middleware by Trunk, and the backend by Actix. Plus, we've got Tailwind CSS sprinkled on top for a touch of style. 🎨 Trunk will automatically ask Tailwind to check for any new classes to add to the .css file.
 
 Ready to give it a whirl? Try our demo version: [Chatty-rs Demo 🚀](https://chatty.19ninety2.com/) Currently down (my home server exploded).
