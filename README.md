@@ -5,7 +5,7 @@
 
 Introducing Chatty-rs, a delightful and straightforward 1:1 chat example built with an all-Rust stack! 🦀 The frontend is powered by Yew, the middleware by Trunk, and the backend by Actix. Plus, we've got Tailwind CSS sprinkled on top for a touch of style. 🎨 Trunk will automatically ask Tailwind to check for any new classes to add to the .css file.
 
-Ready to give it a whirl? Try our demo version: [Chatty-rs Demo 🚀](https://chatty.19ninety2.com/) Currently down (my home server exploded).
+Ready to give it a whirl? Try my demo version: [Chatty-rs Demo 🚀](https://chatty.19ninety2.com/)
 
 To set up Chatty-rs on your local machine, follow these steps:
 
